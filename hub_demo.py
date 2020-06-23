@@ -12,10 +12,9 @@ def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
 api_key = ""
 channel_prefix = ""
 
-if len(sys.argv) == 3:
+if len(sys.argv) > 2:
     api_key = sys.argv[1]
     channel_prefix = sys.argv[2] + ":"
-
 else:
     print("please provide API Key as argument")
     exit()
