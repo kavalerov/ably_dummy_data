@@ -9,6 +9,7 @@ export ABLY_API_KEY="{your-ably-api-key}"
 # check it works with
 $ echo $ABLY_API_KEY
 ```
+
 (don't forget to restart the shell to activate the new values)
 
 #### Edit the `.config.sh` file to set your channel and other options
@@ -21,7 +22,9 @@ api_name="fliptopbox"
 source_app="zero"
 namespace="tick-tock"
 ```
+
 You can change the frequency of the poll
+
 ```bash
 # wait for 25 seconds
 snooze=25
@@ -40,13 +43,13 @@ You can data that is sent to your channel by editing [payload.json](./curl/paylo
 
 ```json
 {
-    "name": "event",
-    "data": {
-        "id": 123123123,
-        "name": "kilroy",
-        "note": "was here"
-    }
-}	
+  "name": "event",
+  "data": {
+    "id": 123123123,
+    "name": "kilroy",
+    "note": "was here"
+  }
+}
 ```
 
 To check your JSON we recommend the [The JSON Validator](https://jsonlint.com/)
