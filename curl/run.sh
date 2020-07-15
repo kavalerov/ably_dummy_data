@@ -9,10 +9,8 @@ channel=$(echo "$fqcn" | perl -MURI::Escape -ne 'chomp;print uri_escape($_),"\n"
 
 json_filename="./payload.json"
 
-# History of messsages
-# curl "https://rest.ably.io/channels/${channel}/messages" -u "$jpikey"
-
-'""""""""""""""""""""""""""""""""""""""""""""'
+# To get the history of messsages for the channel
+# curl "https://rest.ably.io/channels/${channel}/messages" -u "$apikey"
 
 while true; do
     clear
